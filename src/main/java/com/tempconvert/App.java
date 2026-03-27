@@ -1,13 +1,12 @@
 package com.tempconvert;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import jakarta.xml.ws.Endpoint;
+
+public class App {
+  public static void main(String[] args) {
+    String url = "http://localhost:8080/tempconvert";
+    System.out.println("Service starting at: " + url + "?wsdl");
+
+    Endpoint.publish(url, new TempConvert());
+  }
 }
