@@ -61,7 +61,7 @@ tree .
 - From the project root, run:
 
 ```bash
-mvn compile exec:java -Dexec.mainClass="com.tempconvert.App"
+make run
 ```
 
 - The service is now live. You can view the generated WSDL at:
@@ -86,28 +86,12 @@ _SoapUI_ is the industry-standard tool for exploring and testing SOAP services.
 
 ## Method B: Via CLI (The Raw "Wrapper" Method)
 
-- Testing via the Command Line Interface (CLI) proves that you understand the raw HTTP POST structure and the XML Envelope.
-
-1. Create the Request File (request.xml):
-
-```XML
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:web="http://w3schools.com/xml/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <web:FahrenheitToCelsius>
-         <Fahrenheit>100</Fahrenheit>
-      </web:FahrenheitToCelsius>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
+- Run the following commands:
 
 ```bash
-curl -X POST \
- -H "Content-Type: text/xml; charset=utf-8" \
- -H "SOAPAction: \"\"" \
- -d @request.xml \
- http://localhost:8080/tempconvert
+make test-f # test convert to Fahrenheit to Celsius
+
+make test-c # test convert Celsius to Fahrenheit
 ```
 
 # ⚠️ Lessons Learned
