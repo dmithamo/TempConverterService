@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:web="http://w3schools.com/xml/">
+  <soapenv:Header />
+  <soapenv:Body>
+    <web:FahrenheitToCelsius>
+      <Fahrenheit>100</Fahrenheit>
+    </web:FahrenheitToCelsius>
+  </soapenv:Body>
+</soapenv:Envelope>
