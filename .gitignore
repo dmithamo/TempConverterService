@@ -1,1 +1,31 @@
+# --- Maven ---
+# This folder contains your compiled .class files and the final .jar
 target/
+
+# --- IDEs ---
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
+
+# --- Java specific ---
+# If you ever generate Javadoc, ignore the output
+doc/
+
+# --- Project Specific ---
+# Ignore the temporary request file created by 'make test-c'
+temp_req.xml
