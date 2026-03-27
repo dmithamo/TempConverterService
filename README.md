@@ -116,11 +116,3 @@ make test-c # test convert Celsius to Fahrenheit
 
 <img width="709" height="300" alt="image" src="https://github.com/user-attachments/assets/bca24ab9-8534-40cb-84d2-2c5b207b4dd7" />
 
-
-# ⚠️ Lessons Learned
-
-- Namespace Prefixes: XML reserved words matter. The prefix xml: cannot be used for custom namespaces; instead, use web:, tns:, or tem:.
-
-- SOAPAction Header: Even if empty, the SOAPAction HTTP header is often required by JAX-WS to correctly route the request.
-
-- Mapping Annotations: Compiled Java does not always preserve parameter names. Using @WebParam(name = "Fahrenheit") is essential to ensure the XML tag names match the WSDL specification.
