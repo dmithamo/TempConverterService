@@ -25,8 +25,22 @@ _Jakarta EE_ - The modern evolution of "Java EE." It provides the libraries need
 ## Project structure
 
 ```bash
-tree .
 .
+└── Makefile
+└── target
+    └── generated-sources
+        └── annotations
+    └── classes
+        └── com
+            └── tempconvert
+                └── App.class
+                └── TempConvert.class
+    └── maven-status
+        └── maven-compiler-plugin
+            └── compile
+                └── default-compile
+                    └── inputFiles.lst
+                    └── createdFiles.lst
 └── pom.xml
 └── README.md
 └── request.xml
@@ -43,7 +57,8 @@ tree .
                     └── TempConvert.java
                     └── App.java
 
-9 directories, 6 files
+19 directories, 11 files
+
 ```
 
 # 🛠️ Installation & Running
@@ -84,6 +99,9 @@ _SoapUI_ is the industry-standard tool for exploring and testing SOAP services.
 
 - Execute: Replace the ? with a number (e.g., 100) and click the Green Play Arrow.
 
+<img width="1792" height="1162" alt="image" src="https://github.com/user-attachments/assets/25919903-42b8-49a5-afa0-ff298ced81f7" />
+
+
 ## Method B: Via CLI (The Raw "Wrapper" Method)
 
 - Run the following commands:
@@ -93,6 +111,11 @@ make test-f # test convert to Fahrenheit to Celsius
 
 make test-c # test convert Celsius to Fahrenheit
 ```
+
+<img width="1680" height="405" alt="image" src="https://github.com/user-attachments/assets/0fa53338-3cab-43d7-b5b1-2d53b01ff03a" />
+
+<img width="709" height="300" alt="image" src="https://github.com/user-attachments/assets/bca24ab9-8534-40cb-84d2-2c5b207b4dd7" />
+
 
 # ⚠️ Lessons Learned
 
