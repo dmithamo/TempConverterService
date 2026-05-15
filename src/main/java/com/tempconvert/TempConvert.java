@@ -10,15 +10,15 @@ import jakarta.jws.soap.SOAPBinding;
 @SOAPBinding(style = SOAPBinding.Style.RPC)
 public class TempConvert {
 
-    @WebMethod(operationName = "FahrenheitToCelsius")
-    @WebResult(name = "FahrenheitToCelsiusResult")
-    public double fahrenheitToCelsius(@WebParam(name = "Fahrenheit") double fahrenheit) {
-        return (fahrenheit - 32) * 5 / 9;
-    }
+  @WebMethod(operationName = "FahrenheitToCelsius")
+  @WebResult(name = "FahrenheitToCelsiusResult")
+  public double fahrenheitToCelsius(@WebParam(name = "Fahrenheit") double fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+  }
 
-    @WebMethod(operationName = "CelsiusToFahrenheit")
-    @WebResult(name = "CelsiusToFahrenheitResult")
-    public double celsiusToFahrenheit(@WebParam(name = "Celsius") double celsius) {
-        return (celsius * 9 / 5) + 32;
-    }
+  @WebMethod(operationName = "CelsiusToFahrenheit")
+  @WebResult(name = "CelsiusToFahrenheitResult")
+  public double celsiusToFahrenheit(@WebParam(name = "Celsius") double celsius) {
+    return (celsius * 9 / 5) + 32;
+  }
 }
